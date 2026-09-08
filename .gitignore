@@ -1,0 +1,17 @@
+# Local editor state
+.DS_Store
+.envrc
+
+# Python / tooling
+*.pyc
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.cache/
+.mplconfig/
+
+# Local datasets and generated outputs
+data/
+results/
+logs/

@@ -1,0 +1,22 @@
+dataset: mnist
+output_dir: results/headline_mnist
+model:
+  width: 32
+  depth: 32
+  activation: relu
+method:
+  name: pcalm
+  budget: 64
+  alpha: 1.0
+  rho: 1.0
+  state_lr: 0.25
+  inner_steps: 1
+  weight_credit_timing: pre_dual_energy
+training:
+  seed: 0
+  epochs: 1
+  batch_size: 64
+  eta0: 0.001
+  gamma0: 1.0
+  train_subset: 60000
+  test_subset: 10000

@@ -1,0 +1,6 @@
+L,state_lr,source
+8,0.209541,eta_best_by_cell_median_over_dataset_activation_width
+16,0.221921,eta_best_by_cell_median_over_dataset_activation_width
+32,0.234285,eta_best_by_cell_median_over_dataset_activation_width
+64,0.242954,eta_best_by_cell_median_over_dataset_activation_width
+128,0.247725,eta_best_by_cell_median_over_dataset_activation_width

@@ -1,0 +1,26 @@
+[project]
+name = "pc-alm"
+version = "0.1.0"
+description = "Augmented Lagrangian Predictive Coding (PC-ALM): clean JAX reference implementation."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "jax>=0.4.26",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+]
+
+# Virtual (non-packaged) project: `uv sync` builds the env and installs
+# dependencies without building `pcalm/` as a wheel. The library is imported from
+# the source tree via `pythonpath` below.
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

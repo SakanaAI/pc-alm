@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Augmented Lagrangian Predictive Coding"
+message: "If you use this code, please cite the associated paper."
+authors:
+  - family-names: "Seely"
+    given-names: "Jeffrey"
+    affiliation: "Sakana AI"
+  - family-names: "Gould"
+    given-names: "Julian"
+    affiliation: "Sakana AI"
+license: MIT
+repository-code: "https://github.com/SakanaAI/pc-alm"
+preferred-citation:
+  type: article
+  title: "Augmented Lagrangian Predictive Coding"
+  authors:
+    - family-names: "Seely"
+      given-names: "Jeffrey"
+    - family-names: "Gould"
+      given-names: "Julian"
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2605.31022"
+  url: "https://arxiv.org/abs/2605.31022"

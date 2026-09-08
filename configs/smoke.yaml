@@ -1,0 +1,22 @@
+dataset: synthetic
+output_dir: results/smoke
+model:
+  width: 8
+  depth: 4
+  activation: relu
+method:
+  name: pcalm
+  budget: 4
+  alpha: 1.0
+  rho: 1.0
+  state_lr: 0.25
+  inner_steps: 1
+  weight_credit_timing: pre_dual_energy
+training:
+  seed: 0
+  epochs: 1
+  batch_size: 16
+  eta0: 0.001
+  gamma0: 1.0
+  train_subset: 64
+  test_subset: 32
