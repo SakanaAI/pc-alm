@@ -9,6 +9,10 @@ import jax.numpy as jnp
 Params = list[jax.Array]
 
 
+def telu(x: jax.Array) -> jax.Array:
+    return x * jnp.tanh(jnp.exp(jnp.minimum(x, 10.0)))
+
+
 def activation_fn(name: str) -> Callable[[jax.Array], jax.Array]:
     if name == "linear":
         return lambda x: x
@@ -16,6 +20,8 @@ def activation_fn(name: str) -> Callable[[jax.Array], jax.Array]:
         return jnp.tanh
     if name == "relu":
         return jax.nn.relu
+    if name == "telu":
+        return telu
     raise ValueError(f"unknown activation: {name}")
 
 
