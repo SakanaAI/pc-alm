@@ -1,6 +1,6 @@
 # PC-ALM
 
-![PC-ALM Figure 1](assets/fig1.png)
+![PC-ALM Figure 1](assets/fig1.gif)
 
 > **PC-ALM** aligns local predictive-coding updates with backpropagation by
 > accumulating layer-local constraint errors in Lagrange multipliers.
